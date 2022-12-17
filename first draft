@@ -1,0 +1,30 @@
+# This is the final project 
+# INST 326
+# Team Members: Olga, Molondo, Viet, Tanna 
+# Description: creating a program that will act as a validation to verify a 4-year plan that will make sure students are on track to complete the declared major regardless
+# of whether or not they change major
+
+
+class Planner:
+"""
+This class read datas to determine prerequisite, requirements, and course needed
+"""
+  def __init__:
+  
+  def findCourse:
+  
+  def findRequired:
+  
+  def findPrerequisites:      
+  
+  def totalCredits:
+
+
+class FindCourse:
+"""
+This class finds missing courses from the 4-year plan needed to graduate
+"""
+
+
+
+  
