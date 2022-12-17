@@ -143,6 +143,8 @@ def main(filename:str):
     total_credits = major_credits + core_credits
     print("Total Credits", total_credits)
     print("Benchmark Classes", core_credits)
+    #pprint(core_classes) prints core courses already taken
+    #pprint(major_classes) prints major courses already taken
 
     if total_credits < 60:
         print("Not enough total credits to apply for graduation")
