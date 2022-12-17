@@ -1,0 +1,200 @@
+<umd>
+	<courses>
+		<course name="MATH003" credit="3" description="Developmental Mathematics">
+		</course>
+		<course name="ENGL391" credit="3" description="Advanced Composition">
+		</course>
+		<course name="ENGL392" credit="3" description="Legal Writing">
+		</course>
+		<course name="ENGL393" credit="3" description="Technical Writing">
+		</course>
+		<course name="ENGL394" credit="3" description="Business Writing">
+		</course>
+		<course name="ENGL395" credit="3" description="Writing for Health Professions">
+		</course>
+		<course name="ENGL398" credit="3" description="Topics in Professional Writing">
+		</course>
+		<course name="SOCY105" credit="3" description="Introduction to Contemporary Social Problems">
+		</course>
+		<course name="GEOG276" credit="3" description="Principles of Python Programming and Geocomputing">
+		</course>
+		<course name="MATH110" credit="3" description="Elementary Mathematical Models">
+			<prerequisite count="1">
+				<name>MATH003</name>
+			</prerequisite>
+		</course>
+		<course name="MATH113" credit="3" description="College Algebra and Trigonometry">
+			<prerequisite count="1">
+				<name>MATH003</name>
+			</prerequisite>
+		</course>
+		<course name="MATH115" credit="3" description="Precalculus">
+			<prerequisite count="1">
+				<name>MATH003</name>
+				<name>MATH113</name>
+			</prerequisite>
+		</course>
+		<course name="MATH140" credit="3" description="Calculus I">
+			<prerequisite count="1">
+				<name>MATH115</name>
+			</prerequisite>
+		</course>
+		<course name="CMSC131" credit="4" description="Object-Oriented Programming I">
+			<Corequisite count="1">
+				<name>MATH140</name>
+			</Corequisite>
+		</course>
+		<course name="STAT100" credit="3" description="Elementary Statistics and Probability">
+			<prerequisite count="1">
+				<name>MATH110</name>
+				<name>MATH113</name>
+				<name>MATH115</name>
+			</prerequisite>
+		</course>
+		<course name="ENGL101" credit="3" description="Academic Writing">
+		</course>
+		<course name="INST126" credit="3" description="Introduction to Programming for Information Science ">
+			<prerequisite count="1">
+				<name>STAT100</name>
+			</prerequisite>
+		</course>
+		<course name="INST327" credit="3" description="Database Design and Modeling">
+			<prerequisite count="1">
+				<name>INST126</name>
+				<name>GEOG276</name>
+			</prerequisite>
+		</course>
+
+		<course name="PSYC100" credit="3" description="Introduction to Psychology">
+		</course>		
+		<course name="INST201" credit="3" description="Introduction to Information Science">
+		</course>
+		<course name="INST326" credit="3" description="Object-Oriented Programming for Information Science">
+			<prerequisite count="1">
+				<name>INST126</name>
+				<name>GEOG276</name>
+			</prerequisite>
+		</course>		
+		<course name="INST311" credit="3" description="Information Organization">
+			<prerequisite count="1">
+				<name>PSYC100</name>
+				<name>SOCY105</name>
+			</prerequisite>
+		</course>
+		<course name="INST301" credit="3" description="Introduction to Information Science">
+		</course>
+		<course name="INST335" credit="3" description="Organizations, Management and Teamwork">
+			<prerequisite count="1">
+				<name>INST201</name>
+				<name>INST301</name>
+			</prerequisite>
+			<prerequisite count="1">
+				<name>PSYC100</name>
+			</prerequisite>
+		</course>
+		<course name="INST314" credit="3" description="Statistics for Information Science">
+			<prerequisite count="1">
+				<name>INST126</name>
+				<name>GEOG276</name>
+			</prerequisite>
+			<prerequisite count="1">
+				<name>STAT100</name>
+			</prerequisite>
+			<prerequisite count="1">
+				<name>MATH115</name>
+			</prerequisite>
+		</course>
+		<course name="INST352" credit="3" description="Information User Needs and Assessment">
+			<prerequisite count="1">
+				<name>INST201</name>
+				<name>INST301</name>
+			</prerequisite>
+			<prerequisite count="1">
+				<name>INST311</name>
+			</prerequisite>
+		</course>
+		<course name="INST346" credit="3" description="Technologies, Infrastructure and Architecture">
+			<prerequisite count="1">
+				<name>INST201</name>
+				<name>INST301</name>
+			</prerequisite>
+			<prerequisite count="1">
+				<name>INST326</name>
+				<name>CMSC131</name>
+			</prerequisite>
+			<prerequisite count="1">
+				<name>INST327</name>
+			</prerequisite>
+		</course>
+		<course name="INST362" credit="3" description="User-Centered Design">
+			<prerequisite count="1">
+				<name>INST201</name>
+				<name>INST301</name>
+			</prerequisite>
+			<prerequisite count="1">
+				<name>PSYC100</name>
+				<name>SOCY105</name>
+			</prerequisite>
+			<prerequisite count="1">
+				<name>INST326</name>
+				<name>STAT100</name>
+			</prerequisite>
+		</course>
+		<course name="INST490" credit="3" description="Integrated Capstone for Information Science">
+			<prerequisite count="1">
+				<name>INST201</name>
+				<name>INST301</name>
+			</prerequisite>
+			<prerequisite count="1">
+				<name>INST126</name>
+				<name>INST311</name>
+				<name>INST314</name>
+				<name>INST326</name>
+				<name>INST327</name>
+				<name>INST335</name>
+				<name>INST346</name>
+				<name>INST352</name>
+				<name>INST362</name>
+				<name>PSYC100</name>
+				<name>STAT100</name>
+				<name>MATH115</name>
+			</prerequisite>
+		</course>
+	</courses>
+	<program name="Information Science">
+		<required>
+			<course>MATH115</course>
+			<course>STAT100</course>
+			<course>ENGL101</course>
+			<course>INST126</course>
+			<course>PSYC100</course>
+			<course>INST201</course>
+			<course>INST326</course>
+			<course>INST311</course>
+			<course>INST327</course>
+			<course>INST335</course>
+			<course>INST314</course>
+			<course>ENGL39_(FSPW)</course>
+			<course>INST352</course>
+			<course>INST346</course>
+			<course>INST362</course>
+			<course>INST490</course>
+		</required>
+		<complementary count="3">
+			<group name="ELECTIVE" credit="38"/>
+			<group name="INST UPPER-LEVEL" credit="15"/>
+			<group name="DSHU" credit="18"/>
+		</complementary>
+		<BenchMarks>
+			<BenchMark ID="1">
+				<course>MATH115</course>
+				<course>PSYC100</course>
+			</BenchMark>
+			<BenchMark ID="1">
+				<course>INST126</course>
+				<course>INST201</course>
+				<course>STAT100</course>
+			</BenchMark>
+		</BenchMarks>
+	</program>
+</umd>
